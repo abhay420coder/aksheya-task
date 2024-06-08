@@ -52,3 +52,33 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+
+
+
+* Name: Abhay Kumar
+* Contact No: +91 7050581271
+* Email ID: abhaykumar.tech.it@gmail.com
+* Total Experience: Over 2 years
+* Relevant Experience: Over 2 years working with MERN/MEAN stack technologies
+* Current Employer/Company Name: Cordis Technology Private Limited
+* Present Salary Package/Monthly in Hand: 4 lakhs per annum
+* Salary Expectation: Approximately 6 lakhs per annum
+* Reason for Job Change: Seeking new opportunities and challenges to further develop my skills and contribute to impactful projects.
+* 10th Passing Year and Percentage: 2014, 70%
+* 12th Passing Year and Percentage: 2016, 66%
+* Graduation Percentage and Passing Year: BE (CSE) – VTU, July 2022, 7.2 CGPA
+* Any Gap after Graduation: No
+* Reason for Gap: NAN
+* Minimum Notice Period: 15 days
+* Home Location: Patna, Bihar
+* Current Location: Patna, Bihar (due to work from home mode)
+
+
+# varanasi
+1. Ramnagar aur chunar ghr ke beech me , gailba ke paas ,  baghichwa ke paas = 40 bigha = 60L/bigha = 1914 me khrida gya
+   1. charo baghal road
+   2. 
+2. patna
+   1. zero mile ke paas
+3. 
