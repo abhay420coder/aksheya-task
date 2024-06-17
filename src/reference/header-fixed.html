@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Interaction</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  width: 100%;
+  padding: 20px;
+  background-color: #f8f9fa;
+  transition: all 0.3s;
+}
+
+.header-scroll {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.section {
+  width: 100%;
+  padding: 20px;
+}
+
+#hero {
+  height: 400px;
+  background-color: #e9ecef;
+}
+
+#client {
+  height: 100px;
+  background-color: #dee2e6;
+}
+
+#about1, #about3, #about5 {
+  height: 500px;
+  background-color: #ced4da;
+}
+
+#about2, #about4 {
+  height: 400px;
+  background-color: #adb5bd;
+}
+
+footer {
+  height: 100px;
+  background-color: #6c757d;
+  position: relative;
+}
+
+.scroll-arrow {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #343a40;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  display: none; /* Initially hidden */
+}
+
+.scroll-arrow:active {
+  transform: translateY(2px);
+}
+
+  </style>
+</head>
+<body>
+  <header id="header">Header</header>
+  <section id="hero" class="section">Hero Section</section>
+  <section id="client" class="section">Client Section</section>
+  <section id="about1" class="section">About Section 1</section>
+  <section id="about2" class="section">About Section 2</section>
+  <section id="about3" class="section">About Section 3</section>
+  <section id="about4" class="section">About Section 4</section>
+  <section id="about5" class="section">About Section 5</section>
+  <footer id="footer">
+    Footer
+    <button id="scroll-to-hero" class="scroll-arrow">↑</button>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+  const header = document.getElementById('header');
+  const scrollToHeroButton = document.getElementById('scroll-to-hero');
+  const heroSection = document.getElementById('hero');
+
+  // Add scroll event listener
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 0) {
+      header.classList.add('header-scroll');
+      scrollToHeroButton.style.display = 'block';
+    } else {
+      header.classList.remove('header-scroll');
+      scrollToHeroButton.style.display = 'none';
+    }
+  });
+
+  // Add click event listener to the scroll-to-hero button
+  scrollToHeroButton.addEventListener('click', function() {
+    heroSection.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+  </script>
+</body>
+</html>
