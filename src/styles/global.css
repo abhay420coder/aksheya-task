@@ -32,7 +32,7 @@ section {
   font-family: "Raleway", sans-serif;
 }
 
-.container{
+.containers{
 
   @apply 
   px-3 

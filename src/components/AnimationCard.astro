@@ -1,8 +1,8 @@
 ---
-const { animationName = "", className = "d-flex align-items-center justify-content-center" } = Astro.props;
+const { animationName = "", className = "" ,delay="0ms" } = Astro.props;
 ---
 
-<div class={animationName + " animation-block " + className}>
+<div class={animationName + " animation-block " + className} style={"transition-delay: "+ delay+" ;"}>
     <slot />
 </div>
 
@@ -25,6 +25,7 @@ The .child elements follow the same pattern.
     /* margin: 20px 0; */
     opacity: 0;
     transition: transform 1s, opacity 1s;
+    transition-delay: 100ms;
 
 }
 .animation-block.show { opacity: 1; }

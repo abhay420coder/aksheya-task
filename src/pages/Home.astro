@@ -16,20 +16,20 @@ let hasShow = false;
 
 
 <!-- ========== hero section Start ========== -->
-<section id="heroSection" class="heroSection container flex items-center">
+<section id="heroSection" class="heroSection containers flex items-center">
     <div class="flex-[0.5] flex flex-col gap-2.5">
-        <AnimationCard className = "flex items-start h-fit">
+        <AnimationCard className = "flex items-start h-fit" animationName="slide-up" >
             <h1 class="heroSectionH1  primary-font-family">Grow your business with Akeshya</h1>
         </AnimationCard>
-        <AnimationCard className = "d-flex align-items-flex-start ">
+        <AnimationCard className = "d-flex align-items-flex-start " animationName="slide-up" delay="400ms">
             <h2 class="heroSectionH2 primary-font-family">We are team of talented website designers, developers &amp; digital marketeers</h1>
         </AnimationCard>
-        <AnimationCard className = "d-flex align-items-flex-start ">
+        <AnimationCard className = "d-flex align-items-flex-start " animationName="slide-up" delay="800ms" >
             <a href="#about" class="secondary-button">Get Started</a>
         </AnimationCard>
     </div>
     <div class="flex-[0.5]">
-        <AnimationCard  >
+        <AnimationCard animationName="slide-left" >
             <img src="/src/assets/img/hero-img.png" class="heroSectionImg" />
         </AnimationCard>
     </div>
@@ -61,9 +61,29 @@ let hasShow = false;
 
 
 <!-- ========== client section Start ========== -->
-<div id="clientSection" class="clientSection">
-
-</div>
+<section id="clientSection" class="clientSection " >
+  <div class="containers flex justify-between items-center">
+    <AnimationCard animationName="zoom-in" className="flex justify-center items-center">
+      <img src="/src/assets/img/client-1.png" class="tabletPot:max-w-[40%] grayscale hover:grayscale-0"  alt="" srcset="">
+    </AnimationCard>
+    <AnimationCard animationName="zoom-in" className="flex justify-center items-center">
+      <img src="/src/assets/img/client-2.png" class="tabletPot:max-w-[40%] grayscale hover:grayscale-0"  alt="" srcset="">
+    </AnimationCard>
+    <AnimationCard animationName="zoom-in" className="flex justify-center items-center">
+      <img src="/src/assets/img/client-3.png" class="tabletPot:max-w-[40%] grayscale hover:grayscale-0"  alt="" srcset="">
+    </AnimationCard>
+    <AnimationCard animationName="zoom-in" className="flex justify-center items-center">
+      <img src="/src/assets/img/client-4.png" class="tabletPot:max-w-[40%] grayscale hover:grayscale-0"  alt="" srcset="">
+    </AnimationCard>
+    <AnimationCard animationName="zoom-in" className="flex justify-center items-center">
+      <img src="/src/assets/img/client-5.png" class="tabletPot:max-w-[40%] grayscale hover:grayscale-0"  alt="" srcset="">
+    </AnimationCard>
+    <AnimationCard animationName="zoom-in" className="flex justify-center items-center">
+      <img src="/src/assets/img/client-6.png" class="tabletPot:max-w-[40%] grayscale hover:grayscale-0"  alt="" srcset="">
+    </AnimationCard>
+  </div>
+  
+</section>
 
 
 <!-- 
@@ -109,9 +129,17 @@ let hasShow = false;
 
 
 <!-- ========== about us section Start ========== -->
-<div id="aboutUsSection" class="aboutUsSection">
-
-</div>
+<section id="aboutUsSection" class="aboutUsSection">
+  <div class="containers">
+    <AnimationCard class="section-title aos-init" data-aos="fade-up">
+      <h2>About Us</h2>
+    </AnimationCard>
+    <div>
+      <AnimationCard></AnimationCard>
+      <AnimationCard></AnimationCard>
+    </div>
+  </div>
+</section>
 
 <!-- 
 <section id="about" class="about">
@@ -151,9 +179,9 @@ let hasShow = false;
 
 
 <!-- ========== Count section Start ========== -->
-<div id="countSection" class="countSection">
+<section id="countSection" class="countSection">
 
-</div>
+</section>
 
 
 <!-- 
@@ -533,6 +561,12 @@ let hasShow = false;
     font-size: 24px;
     font-weight: 500;
     line-height: 1.2;
+}
+
+.clientSection {
+    background: #f3f9fd;
+    padding: 10px 0;
+    text-align: center;
 }
 
 @media (max-width: 992px) {
