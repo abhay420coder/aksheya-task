@@ -132,11 +132,11 @@ let hasShow = false;
 <!-- ========== about us section Start ========== -->
 <section id="aboutUsSection" class="aboutUsSection">
     <div class="containers">
-        <AnimationCard className=" flex justify-center items-center pb-[30px] " animationName="fade-up" >
+        <AnimationCard className=" flex justify-center items-center pb-[30px] " animationName="slide-up" >
             <h2 class="section-title mb-2">About Us</h2>
         </AnimationCard>
         <div class="flex gap-6">
-            <AnimationCard className="pl-3">
+            <AnimationCard className="pl-3" animationName="slide-up">
                 <p class="mb-4"> We are Akeshya, a firm that specializes in web design and marketing. We help transform ideas into reality with a team of passionate graphic designers, web developers, and seasoned marketing advisors. </p>
                 <ul class="flex flex-col gap-2.5">
                     <li><span class="material-symbols-outlined text-[#14279b]"> done_all </span> We started with a simple idea: do what is best for the client. </li>
@@ -144,7 +144,7 @@ let hasShow = false;
                     <li><span class="material-symbols-outlined text-[#14279b]"> done_all </span> Our day-to-day work is to solve your problems utilising the most up-to-date, practical adaptive technology, and we have a lot of fun doing it.</li>
                 </ul>
             </AnimationCard>
-            <AnimationCard>
+            <AnimationCard animationName="slide-up">
                 <p class="mb-4">
                     We're professional, but we're also friendly, and we'll always pay attention to your concerns. We expect to work with innovative people that have an open mind and are dedicated to making every idea a reality. We want to hear from you if you're interested in SEO, have Web Development ideas, or require a graphic designer who can match your goals. 
                 </p>
@@ -255,9 +255,51 @@ let hasShow = false;
 
 
 <!-- ========== Services section Start ========== -->
-<div id="servicesSection" class="servicesSection">
+<section id="servicesSection" class="servicesSection">
+  <div class="container">
 
-</div>
+    <AnimationCard className=" flex flex-col justify-center items-center pb-[30px] " animationName="fade-up">
+      <h2 class="section-title mb-2">Services</h2>
+      <p>Akeshya will serve as your consultant and development partner to help you turn your idea into a reality.</p>
+    </AnimationCard>
+
+    <div class="grid grid-cols-6 max-tabletLand:grid-cols-3 max-tabletPot:grid-cols-2 gap-y-12">
+      <!-- <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"> -->
+        <AnimationCard className = "flex items-start " animationName="slide-up" delay="100ms">
+          <div class="icon"><i class="bx bxl-dribbble"></i></div>
+          <h4 class="title"><a href="https://akeshya.com/">Design</a></h4>
+          <p class="description">Our web design services can assist you in reclaiming your company's online image. Your business will flourish on the Internet thanks to the combination of style and technology we provide, as well as our experience.</p>
+        </AnimationCard>
+      <!-- </div> -->
+
+      <!-- <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"> -->
+        <AnimationCard class="icon-box aos-init" data-aos="fade-up" data-aos-delay="200" className = "flex items-start " animationName="slide-up" delay="200ms">
+          <div class="icon"><i class="bx bx-file"></i></div>
+          <h4 class="title"><a href="https://akeshya.com/">Development</a></h4>
+          <p class="description">Our development team can construct platforms to help your business thrive by creating powerful customised solutions tailored to your particular requirements. Akeshya makes use of established and effective web development tools. </p>
+        </AnimationCard>
+      <!-- </div> -->
+
+      <!-- <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"> -->
+        <AnimationCard class="icon-box aos-init" data-aos="fade-up" data-aos-delay="300" className = "flex items-start " animationName="slide-up" delay="300ms">
+          <div class="icon"><i class="bx bx-world"></i></div>
+          <h4 class="title"><a href="https://akeshya.com/">Marketing</a></h4>
+          <p class="description">A beautiful website is the foundation of effective marketing. Our customers achieve success where it counts—in the real world—by combining our proven approach with our passion for improving conversions and increasing ROI.</p>
+        </AnimationCard>
+      <!-- </div> -->
+
+      <!-- <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"> -->
+        <AnimationCard class="icon-box aos-init" data-aos="fade-up" data-aos-delay="400" className = "flex items-start " animationName="slide-up" delay="400ms">
+          <div class="icon"><i class="bx bx-tachometer"></i></div>
+          <h4 class="title"><a href="https://akeshya.com/">Support</a></h4>
+          <p class="description">Since the beginning, we at Akeshya have specialised in website maintenance. We recognise the significance of having your business online 24 hours a day, seven days a week, and we've created a system to ensure that we're always available. </p>
+        </AnimationCard>
+      <!-- </div> -->
+
+    </div>
+
+  </div>
+</section>
 
 <!-- 
 <section id="services" class="services">
@@ -376,9 +418,9 @@ let hasShow = false;
 
 
 <!-- ========== Our Core Features section Start ========== -->
-<div id="coreFeatureSection" class="coreFeatureSection">
+<section id="coreFeatureSection" class="coreFeatureSection">
 
-</div>
+</section>
 
 
 <!-- 
@@ -474,9 +516,9 @@ let hasShow = false;
 
 
 <!-- ========== Contact Us section Start ========== -->
-<div class="contactUsSection contactUsSection">
+<section class="contactUsSection contactUsSection">
 
-</div>
+</section>
 
 <!-- 
 <section id="contact" class="contact">
