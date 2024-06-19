@@ -1,38 +1,50 @@
 ---
-import HomeHeader from '../components/HomeHeader.astro'
-import AnimationCard from '../components/AnimationCard.astro'
-import HomeFooter from '../components/HomeFooter.astro';
-import AnimationExample from '../components/AnimationExample.astro';
-// import "../styles/global.css" 
+import HomeHeader from "../components/HomeHeader.astro";
+import AnimationCard from "../components/AnimationCard.astro";
+import HomeFooter from "../components/HomeFooter.astro";
+import AnimationExample from "../components/AnimationExample.astro";
+// import "../styles/global.css"
 
 let hasShow = false;
 ---
 
 <!-- ========== Header section Start ========== -->
-<HomeHeader></HomeHeader>
+<HomeHeader />
 <!-- ========== Header section End ========== -->
 
 <!-- <AnimationCard></AnimationCard> -->
 
-
 <!-- ========== hero section Start ========== -->
 <section id="heroSection" class="heroSection containers flex items-center">
-    <div class="flex-[0.5] flex flex-col gap-2.5">
-        <AnimationCard className = "flex items-start h-fit" animationName="slide-up" >
-            <h1 class="heroSectionH1  primary-font-family">Grow your business with Akeshya</h1>
-        </AnimationCard>
-        <AnimationCard className = "flex items-start " animationName="slide-up" delay="400ms">
-            <h2 class="heroSectionH2 primary-font-family">We are team of talented website designers, developers &amp; digital marketeers</h1>
-        </AnimationCard>
-        <AnimationCard className = "flex items-start " animationName="slide-up" delay="800ms" >
-            <a href="#about" class="secondary-button">Get Started</a>
-        </AnimationCard>
-    </div>
-    <div class="flex-[0.5]">
-        <AnimationCard  animationName="slide-left" >
-            <img src="/src/assets/img/hero-img.png" class="heroSectionImg" />
-        </AnimationCard>
-    </div>
+  <div class="flex-[0.5] flex flex-col gap-2.5">
+    <AnimationCard className="flex items-start h-fit" animationName="slide-up">
+      <h1 class="heroSectionH1 primary-font-family">
+        Grow your business with Akeshya
+      </h1>
+    </AnimationCard>
+    <AnimationCard
+      className="flex items-start "
+      animationName="slide-up"
+      delay="400ms"
+    >
+      <h2 class="heroSectionH2 primary-font-family">
+        We are team of talented website designers, developers &amp; digital
+        marketeers
+      </h2>
+    </AnimationCard>
+    <AnimationCard
+      className="flex items-start "
+      animationName="slide-up"
+      delay="800ms"
+    >
+      <a href="#about" class="secondary-button">Get Started</a>
+    </AnimationCard>
+  </div>
+  <div class="flex-[0.5]">
+    <AnimationCard animationName="slide-left">
+      <img src="/src/assets/img/hero-img.png" class="heroSectionImg" />
+    </AnimationCard>
+  </div>
 </section>
 
 <!-- 
@@ -57,35 +69,81 @@ let hasShow = false;
    -->
 <!-- ========== hero section End ========== -->
 
-
-
-
 <!-- ========== client section Start ========== -->
-<section id="clientSection" class="clientSection " >
-    <!-- <div class="containers flex "> -->
-    <div class="containers grid grid-cols-6 max-tabletLand:grid-cols-3 max-tabletPot:grid-cols-2">   
-        <!-- flex-[calc(1/6)] -->
-        <AnimationCard animationName="zoom-in" className="flex  justify-center items-center">
-        <img src="/src/assets/img/client-1.png" class="max-w-[40%] grayscale hover:grayscale-0 py-2.5"  alt="" srcset="">
-        </AnimationCard>
-        <AnimationCard animationName="zoom-in" className="flex justify-center items-center">
-        <img src="/src/assets/img/client-2.png" class="max-w-[40%] grayscale hover:grayscale-0 py-2.5"  alt="" srcset="">
-        </AnimationCard>
-        <AnimationCard animationName="zoom-in" className="flex justify-center items-center">
-        <img src="/src/assets/img/client-3.png" class="max-w-[40%] grayscale hover:grayscale-0 py-2.5"  alt="" srcset="">
-        </AnimationCard>
-        <AnimationCard animationName="zoom-in" className="flex justify-center items-center">
-        <img src="/src/assets/img/client-4.png" class="max-w-[40%] grayscale hover:grayscale-0 py-2.5"  alt="" srcset="">
-        </AnimationCard>
-        <AnimationCard animationName="zoom-in" className="flex justify-center items-center">
-        <img src="/src/assets/img/client-5.png" class="max-w-[40%] grayscale hover:grayscale-0 py-2.5"  alt="" srcset="">
-        </AnimationCard>
-        <AnimationCard animationName="zoom-in" className="flex justify-center items-center">
-        <img src="/src/assets/img/client-6.png" class="max-w-[40%] grayscale hover:grayscale-0 py-2.5"  alt="" srcset="">
-        </AnimationCard>
-    </div>
+<section id="clientSection" class="clientSection">
+  <!-- <div class="containers flex "> -->
+  <div
+    class="containers grid grid-cols-6 max-tabletLand:grid-cols-3 max-tabletPot:grid-cols-2"
+  >
+    <!-- flex-[calc(1/6)] -->
+    <AnimationCard
+      animationName="zoom-in"
+      className="flex  justify-center items-center"
+    >
+      <img
+        src="/src/assets/img/client-1.png"
+        class="max-w-[40%] grayscale hover:grayscale-0 py-2.5"
+        alt=""
+        srcset=""
+      />
+    </AnimationCard>
+    <AnimationCard
+      animationName="zoom-in"
+      className="flex justify-center items-center"
+    >
+      <img
+        src="/src/assets/img/client-2.png"
+        class="max-w-[40%] grayscale hover:grayscale-0 py-2.5"
+        alt=""
+        srcset=""
+      />
+    </AnimationCard>
+    <AnimationCard
+      animationName="zoom-in"
+      className="flex justify-center items-center"
+    >
+      <img
+        src="/src/assets/img/client-3.png"
+        class="max-w-[40%] grayscale hover:grayscale-0 py-2.5"
+        alt=""
+        srcset=""
+      />
+    </AnimationCard>
+    <AnimationCard
+      animationName="zoom-in"
+      className="flex justify-center items-center"
+    >
+      <img
+        src="/src/assets/img/client-4.png"
+        class="max-w-[40%] grayscale hover:grayscale-0 py-2.5"
+        alt=""
+        srcset=""
+      />
+    </AnimationCard>
+    <AnimationCard
+      animationName="zoom-in"
+      className="flex justify-center items-center"
+    >
+      <img
+        src="/src/assets/img/client-5.png"
+        class="max-w-[40%] grayscale hover:grayscale-0 py-2.5"
+        alt=""
+        srcset=""
+      />
+    </AnimationCard>
+    <AnimationCard
+      animationName="zoom-in"
+      className="flex justify-center items-center"
+    >
+      <img
+        src="/src/assets/img/client-6.png"
+        class="max-w-[40%] grayscale hover:grayscale-0 py-2.5"
+        alt=""
+        srcset=""
+      />
+    </AnimationCard>
+  </div>
 </section>
-
 
 <!-- 
 <section id="clients" class="clients clients">
@@ -123,35 +181,60 @@ let hasShow = false;
   </section> 
 -->
 
-
 <!-- ========== client section End ========== -->
-
-
-
 
 <!-- ========== about us section Start ========== -->
 <section id="aboutUsSection" class="aboutUsSection">
-    <div class="containers">
-        <AnimationCard className=" flex justify-center items-center pb-[30px] " animationName="slide-up" >
-            <h2 class="section-title mb-2">About Us</h2>
-        </AnimationCard>
-        <div class="flex gap-6">
-            <AnimationCard className="pl-3" animationName="slide-up">
-                <p class="mb-4"> We are Akeshya, a firm that specializes in web design and marketing. We help transform ideas into reality with a team of passionate graphic designers, web developers, and seasoned marketing advisors. </p>
-                <ul class="flex flex-col gap-2.5">
-                    <li><span class="material-symbols-outlined text-[#14279b]"> done_all </span> We started with a simple idea: do what is best for the client. </li>
-                    <li><span class="material-symbols-outlined text-[#14279b]"> done_all </span> Our methodical and individual approach to each project delivers the finest possible results for your media.</li>
-                    <li><span class="material-symbols-outlined text-[#14279b]"> done_all </span> Our day-to-day work is to solve your problems utilising the most up-to-date, practical adaptive technology, and we have a lot of fun doing it.</li>
-                </ul>
-            </AnimationCard>
-            <AnimationCard animationName="slide-up">
-                <p class="mb-4">
-                    We're professional, but we're also friendly, and we'll always pay attention to your concerns. We expect to work with innovative people that have an open mind and are dedicated to making every idea a reality. We want to hear from you if you're interested in SEO, have Web Development ideas, or require a graphic designer who can match your goals. 
-                </p>
-                <a href="https://akeshya.com/#services" class="secondary-button">Learn More</a>
-            </AnimationCard>
-        </div>
+  <div class="containers">
+    <AnimationCard
+      className=" flex justify-center items-center pb-[30px] "
+      animationName="slide-up"
+    >
+      <h2 class="section-title mb-2">About Us</h2>
+    </AnimationCard>
+    <div class="flex gap-6">
+      <AnimationCard className="pl-3" animationName="slide-up">
+        <p class="mb-4">
+          We are Akeshya, a firm that specializes in web design and marketing.
+          We help transform ideas into reality with a team of passionate graphic
+          designers, web developers, and seasoned marketing advisors.
+        </p>
+        <ul class="flex flex-col gap-2.5">
+          <li>
+            <span class="material-symbols-outlined text-[#14279b]">
+              done_all
+            </span> We started with a simple idea: do what is best for the client.
+          </li>
+          <li>
+            <span class="material-symbols-outlined text-[#14279b]">
+              done_all
+            </span> Our methodical and individual approach to each project delivers
+            the finest possible results for your media.
+          </li>
+          <li>
+            <span class="material-symbols-outlined text-[#14279b]">
+              done_all
+            </span> Our day-to-day work is to solve your problems utilising the most
+            up-to-date, practical adaptive technology, and we have a lot of fun doing
+            it.
+          </li>
+        </ul>
+      </AnimationCard>
+      <AnimationCard animationName="slide-up">
+        <p class="mb-4">
+          We're professional, but we're also friendly, and we'll always pay
+          attention to your concerns. We expect to work with innovative people
+          that have an open mind and are dedicated to making every idea a
+          reality. We want to hear from you if you're interested in SEO, have
+          Web Development ideas, or require a graphic designer who can match
+          your goals.
+        </p>
+        <a href="https://akeshya.com/#services" class="secondary-button"
+          >Learn More</a
+        >
+      </AnimationCard>
     </div>
+  </div>
 </section>
 
 <!-- 
@@ -185,17 +268,10 @@ let hasShow = false;
   </section>
    -->
 
-
 <!-- ========== about us section End ========== -->
 
-
-
-
 <!-- ========== Count section Start ========== -->
-<section id="countSection" class="countSection">
-
-</section>
-
+<section id="countSection" class="countSection"></section>
 
 <!-- 
 <section id="counts" class="counts">
@@ -241,7 +317,7 @@ let hasShow = false;
                 </div>
               </div>
             </div>
-          </div><!-- End .content-->
+          </div>
         </div>
       </div>
 
@@ -251,53 +327,99 @@ let hasShow = false;
 
 <!-- ========== Count section End ========== -->
 
-
-
-
 <!-- ========== Services section Start ========== -->
 <section id="servicesSection" class="servicesSection">
-  <div class="container">
-
-    <AnimationCard className=" flex flex-col justify-center items-center pb-[30px] " animationName="fade-up">
+  <div class="containers">
+    <AnimationCard
+      className=" flex flex-col justify-center items-center pb-[30px] "
+      animationName="slide-up"
+    >
       <h2 class="section-title mb-2">Services</h2>
-      <p>Akeshya will serve as your consultant and development partner to help you turn your idea into a reality.</p>
+      <p class="text-center">
+        Akeshya will serve as your consultant and development partner to help
+        you turn your idea into a reality.
+      </p>
     </AnimationCard>
 
-    <div class="grid grid-cols-6 max-tabletLand:grid-cols-3 max-tabletPot:grid-cols-2 gap-y-12">
-      <!-- <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"> -->
-        <AnimationCard className = "flex items-start " animationName="slide-up" delay="100ms">
-          <div class="icon"><i class="bx bxl-dribbble"></i></div>
+    <div
+      class="grid grid-cols-4 max-tabletLand:grid-cols-2 max-tabletPot:grid-cols-1 gap-12"
+    >
+      <AnimationCard
+        className=" service-box "
+        animationName="slide-up"
+        delay="100ms"
+      >
+        <div class="service-box">
+          <div class="icon">
+            <i class="material-symbols-outlined">sports_basketball</i>
+          </div>
           <h4 class="title"><a href="https://akeshya.com/">Design</a></h4>
-          <p class="description">Our web design services can assist you in reclaiming your company's online image. Your business will flourish on the Internet thanks to the combination of style and technology we provide, as well as our experience.</p>
-        </AnimationCard>
-      <!-- </div> -->
+          <p class="description">
+            Our web design services can assist you in reclaiming your company's
+            online image. Your business will flourish on the Internet thanks to
+            the combination of style and technology we provide, as well as our
+            experience.
+          </p>
+        </div>
+      </AnimationCard>
 
-      <!-- <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"> -->
-        <AnimationCard class="icon-box aos-init" data-aos="fade-up" data-aos-delay="200" className = "flex items-start " animationName="slide-up" delay="200ms">
-          <div class="icon"><i class="bx bx-file"></i></div>
+      <AnimationCard
+        className=" service-box"
+        animationName="slide-up"
+        delay="200ms"
+      >
+        <div class="service-box">
+          <div class="icon">
+            <i class="material-symbols-outlined">description</i>
+          </div>
           <h4 class="title"><a href="https://akeshya.com/">Development</a></h4>
-          <p class="description">Our development team can construct platforms to help your business thrive by creating powerful customised solutions tailored to your particular requirements. Akeshya makes use of established and effective web development tools. </p>
-        </AnimationCard>
-      <!-- </div> -->
+          <p class="description">
+            Our development team can construct platforms to help your business
+            thrive by creating powerful customised solutions tailored to your
+            particular requirements. Akeshya makes use of established and
+            effective web development tools.
+          </p>
+        </div>
+      </AnimationCard>
 
-      <!-- <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"> -->
-        <AnimationCard class="icon-box aos-init" data-aos="fade-up" data-aos-delay="300" className = "flex items-start " animationName="slide-up" delay="300ms">
-          <div class="icon"><i class="bx bx-world"></i></div>
+      <AnimationCard
+        className=" service-box"
+        animationName="slide-up"
+        delay="300ms"
+      >
+        <div class="service-box">
+          <div class="icon">
+            <i class="material-symbols-outlined">globe</i>
+          </div>
           <h4 class="title"><a href="https://akeshya.com/">Marketing</a></h4>
-          <p class="description">A beautiful website is the foundation of effective marketing. Our customers achieve success where it counts—in the real world—by combining our proven approach with our passion for improving conversions and increasing ROI.</p>
-        </AnimationCard>
-      <!-- </div> -->
+          <p class="description">
+            A beautiful website is the foundation of effective marketing. Our
+            customers achieve success where it counts—in the real world—by
+            combining our proven approach with our passion for improving
+            conversions and increasing ROI.
+          </p>
+        </div>
+      </AnimationCard>
 
-      <!-- <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"> -->
-        <AnimationCard class="icon-box aos-init" data-aos="fade-up" data-aos-delay="400" className = "flex items-start " animationName="slide-up" delay="400ms">
-          <div class="icon"><i class="bx bx-tachometer"></i></div>
+      <AnimationCard
+        className=" service-box"
+        animationName="slide-up"
+        delay="400ms"
+      >
+        <div class="service-box">
+          <div class="icon">
+            <i class="material-symbols-outlined">speed</i>
+          </div>
           <h4 class="title"><a href="https://akeshya.com/">Support</a></h4>
-          <p class="description">Since the beginning, we at Akeshya have specialised in website maintenance. We recognise the significance of having your business online 24 hours a day, seven days a week, and we've created a system to ensure that we're always available. </p>
-        </AnimationCard>
-      <!-- </div> -->
-
+          <p class="description">
+            Since the beginning, we at Akeshya have specialised in website
+            maintenance. We recognise the significance of having your business
+            online 24 hours a day, seven days a week, and we've created a system
+            to ensure that we're always available.
+          </p>
+        </div>
+      </AnimationCard>
     </div>
-
   </div>
 </section>
 
@@ -348,17 +470,53 @@ let hasShow = false;
     </div>
   </section> -->
 
-
 <!-- ========== Services section End ========== -->
 
-
-
-
 <!-- ========== Our More Services section Start ========== -->
-<div id="moreServicesSection" class="moreServicesSection">
+<section id="moreServicesSection" class="moreServicesSection">
+  <div class="containers">
+    <AnimationCard
+      className=" flex flex-col justify-center items-center pb-[30px] "
+      animationName="slide-up"
+    >
+      <h2 class="section-title mb-2">Our Process</h2>
+      <p class="text-center">
+        Over the years we’ve evolved a tested method for attaining achievement for each one of our clients.
+      </p>
+    </AnimationCard>
 
-</div>
+    <div class="grid grid-cols-2 max-tabletLand:grid-cols-1 max-tabletPot:grid-cols-1 gap-12">
+      <AnimationCard
+        className=" more-service-box "
+        animationName="slide-up"
+        delay="100ms"
+      >
 
+      </AnimationCard>
+      <AnimationCard
+        className=" more-service-box "
+        animationName="slide-up"
+        delay="100ms"
+      >
+
+      </AnimationCard>
+      <AnimationCard
+        className=" more-service-box "
+        animationName="slide-up"
+        delay="100ms"
+      >
+
+      </AnimationCard>
+      <AnimationCard
+        className=" more-service-box "
+        animationName="slide-up"
+        delay="100ms"
+      >
+
+      </AnimationCard>
+    </div>
+  </div>
+</section>
 
 <!-- 
 <section id="more-services" class="more-services">
@@ -414,14 +572,8 @@ let hasShow = false;
   </section> -->
 <!-- ========== Our More Services section End ========== -->
 
-
-
-
 <!-- ========== Our Core Features section Start ========== -->
-<section id="coreFeatureSection" class="coreFeatureSection">
-
-</section>
-
+<section id="coreFeatureSection" class="coreFeatureSection"></section>
 
 <!-- 
 <section id="features" class="features">
@@ -512,13 +664,8 @@ let hasShow = false;
 
 <!-- ========== Our Core Features section End ========== -->
 
-
-
-
 <!-- ========== Contact Us section Start ========== -->
-<section class="contactUsSection contactUsSection">
-
-</section>
+<section class="contactUsSection contactUsSection"></section>
 
 <!-- 
 <section id="contact" class="contact">
@@ -589,82 +736,153 @@ let hasShow = false;
 
 <!-- ========== Contact Us section End ========== -->
 
-
-
-<AnimationExample></AnimationExample>
+<AnimationExample />
 <!-- ========== Footer section Start ========== -->
-<HomeFooter></HomeFooter>
+<HomeFooter />
 <!-- ========== Footer section End ========== -->
 
 <style>
-#heroSection {
+  #heroSection {
     width: 100%;
     height: 70vh;
     /* margin-top: 70px; */
-}
-.heroSectionH1{
+  }
+  .heroSectionH1 {
     margin: 0;
     font-size: 48px;
     font-weight: 700;
     line-height: 56px;
     color: #14279b;
-}
-.heroSectionH2{
+  }
+  .heroSectionH2 {
     color: #484848;
     margin: 0;
     margin-bottom: 40px;
     font-size: 24px;
     font-weight: 500;
     line-height: 1.2;
-}
+  }
 
-.clientSection {
+  .clientSection {
     background: #f3f9fd;
     padding: 10px 0;
     text-align: center;
-}
+  }
 
-.section-title{
+  .section-title {
     font-size: 32px;
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
     color: #222222;
-}
+  }
 
-.section-title::before,.section-title::after{
-    content: '';
+  .section-title::before,
+  .section-title::after {
+    content: "";
     width: 50px;
     height: 2px;
     background: #14279b;
     display: inline-block;
-}
+  }
 
-.section-title::before{
+  .section-title::before {
     margin: 0 15px 10px 0;
-}
+  }
 
-.section-title::after{
+  .section-title::after {
     margin: 0 0 10px 15px;
-} 
+  }
 
-@media (max-width: 992px) {
+  .service-box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+  }
+
+  .service-box::before {
+    content: "";
+    position: absolute;
+    background: #e1f0fa;
+    right: -60px;
+    top: -40px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    transition: all 0.3s;
+    z-index: -1;
+  }
+
+  .service-box:hover::before {
+    background: #14279b;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+
+  .service-box .icon {
+    margin: 0 auto 20px auto;
+    padding-top: 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #14279b;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .service-box:hover .icon {
+    background: #fff;
+  }
+  .service-box:hover .icon i {
+    color: #14279b;
+  }
+  .service-box .icon i {
+    font-size: 36px;
+    line-height: 1;
+    color: #fff;
+  }
+  .service-box .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  .service-box .description {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+  .service-box:hover .title,
+  .service-box:hover .description {
+    color: #fff;
+  }
+  
+
+  @media (max-width: 992px) {
     #heroSection {
-        flex-direction: column-reverse;
+      flex-direction: column-reverse;
     }
     .heroSectionImg {
-        width: 50%;
+      width: 50%;
     }
-}
-@media (max-width: 768px) {
+  }
+  @media (max-width: 768px) {
     .heroSectionH1 {
-        font-size: 28px;
-        line-height: 36px;
+      font-size: 28px;
+      line-height: 36px;
     }
     .heroSectionH2 {
-        font-size: 18px;
-        line-height: 24px;
-        margin-bottom: 30px;
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
     }
-}
+  }
 </style>
