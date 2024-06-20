@@ -349,7 +349,6 @@ let hasShow = false;
         animationName="slide-up"
         delay="100ms"
       >
-        <div class="service-box">
           <div class="icon">
             <i class="material-symbols-outlined">sports_basketball</i>
           </div>
@@ -360,7 +359,6 @@ let hasShow = false;
             the combination of style and technology we provide, as well as our
             experience.
           </p>
-        </div>
       </AnimationCard>
 
       <AnimationCard
@@ -368,7 +366,6 @@ let hasShow = false;
         animationName="slide-up"
         delay="200ms"
       >
-        <div class="service-box">
           <div class="icon">
             <i class="material-symbols-outlined">description</i>
           </div>
@@ -379,7 +376,6 @@ let hasShow = false;
             particular requirements. Akeshya makes use of established and
             effective web development tools.
           </p>
-        </div>
       </AnimationCard>
 
       <AnimationCard
@@ -387,7 +383,6 @@ let hasShow = false;
         animationName="slide-up"
         delay="300ms"
       >
-        <div class="service-box">
           <div class="icon">
             <i class="material-symbols-outlined">globe</i>
           </div>
@@ -398,7 +393,6 @@ let hasShow = false;
             combining our proven approach with our passion for improving
             conversions and increasing ROI.
           </p>
-        </div>
       </AnimationCard>
 
       <AnimationCard
@@ -406,7 +400,6 @@ let hasShow = false;
         animationName="slide-up"
         delay="400ms"
       >
-        <div class="service-box">
           <div class="icon">
             <i class="material-symbols-outlined">speed</i>
           </div>
@@ -417,7 +410,6 @@ let hasShow = false;
             online 24 hours a day, seven days a week, and we've created a system
             to ensure that we're always available.
           </p>
-        </div>
       </AnimationCard>
     </div>
   </div>
@@ -491,28 +483,41 @@ let hasShow = false;
         animationName="slide-up"
         delay="100ms"
       >
-
+        <div class="more-service-box-card-body">
+          <h5 class="more-service-box-card-title"><a href="#moreServicesSection">1. Planning</a></h5>
+          <p class="more-service-box-card-text">We help you turn all of your ideas into a digital product that meets all of your requirements. We begin each project by determining its scope and needs. This is done by collaborating closely with you to ensure that we're all on the same page.</p>
+          
+        </div>
+      </AnimationCard>
+      <AnimationCard
+        className=" more-service-box "
+        animationName="slide-up"
+        delay="200ms"
+      >
+        <div class="more-service-box-card-body">
+          <h5 class="more-service-box-card-title"><a href="#moreServicesSection">2. Design</a></h5>
+          <p class="more-service-box-card-text"> We build our websites carefully through a series of workshops, wire-framing, and user experience (UX) sessions, resulting in a site that reinforces trust, conveys important brand messaging, and provides a return on innovation.</p>
+        </div>
       </AnimationCard>
       <AnimationCard
         className=" more-service-box "
         animationName="slide-up"
         delay="100ms"
       >
-
+        <div class="more-service-box-card-body">
+          <h5 class="more-service-box-card-title"><a href="#moreServicesSection">3. Development</a></h5>
+          <p class="more-service-box-card-text">We provide extensive front-end and back-end development that allows your idea to stand alone. Our in-house developers work side-by-side with the artistic team to seek out natural breakpoints inside the content and order practicality based on acknowledged statistics.</p>
+        </div>
       </AnimationCard>
       <AnimationCard
         className=" more-service-box "
         animationName="slide-up"
-        delay="100ms"
+        delay="200ms"
       >
-
-      </AnimationCard>
-      <AnimationCard
-        className=" more-service-box "
-        animationName="slide-up"
-        delay="100ms"
-      >
-
+        <div class="more-service-box-card-body">
+          <h5 class="more-service-box-card-title"><a href="#moreServicesSection"></a>4. Marketing</h5>
+          <p class="more-service-box-card-text">We come up with ideas and campaigns to help your business prosper online. Our campaigns and virtual approach have a verified tune report of accomplishing brilliant results, gathering new leads and site visitors in your website and assist them convert. </p>
+        </div>
       </AnimationCard>
     </div>
   </div>
@@ -573,7 +578,86 @@ let hasShow = false;
 <!-- ========== Our More Services section End ========== -->
 
 <!-- ========== Our Core Features section Start ========== -->
-<section id="coreFeatureSection" class="coreFeatureSection"></section>
+<section id="coreFeatureSection" class="coreFeatureSection">
+  <div class="containers">
+    <AnimationCard
+      className=" flex flex-col justify-center items-center pb-[30px] "
+      animationName="slide-up"
+    >
+      <h2 class="section-title mb-2">Our Core Features</h2>
+      <p class="text-center">
+        Akeshya is a forward-thinking and intelligent design firm that is technically and creatively capable of transforming your brand into its best digital self. Our approach to design and development results in compelling, engaging branding and immersive digital experiences that provide a value for money.
+      </p>
+    </AnimationCard>
+
+    <AnimationCard 
+      className="grid grid-cols-4 max-tabletLand:grid-cols-3 max-tabletPot:grid-cols-1 gap-12"
+      animationName="slide-up"
+      delay="300ms"
+    >
+        <div class="flex items-center p-5 transition-all duration-300 bg-[#f6f6f6] hover:bg-[#eef7fc] ">
+          <i class="text-[32px] leading-[1] pr-2.5 material-symbols-outlined" style="color: #ffbb2c;">web</i>
+          <h3 class="font-bold m-0 p-0 text-base leading-[1]"><a class="hover:text-[#14279b]" href="#">Web design</a></h3>
+        </div>
+
+        <div class="flex items-center p-5 transition-all duration-300 bg-[#f6f6f6] hover:bg-[#eef7fc] ">
+          <i class="text-[32px] leading-[1] pr-2.5 material-symbols-outlined" style="color: #5578ff;">developer_mode_tv</i>
+          <h3 class="font-bold m-0 p-0 text-base leading-[1]"><a class="hover:text-[#14279b]" href="#">Development</a></h3>
+        </div>
+
+        <div class="flex items-center p-5 transition-all duration-300 bg-[#f6f6f6] hover:bg-[#eef7fc] ">
+          <i class="text-[32px] leading-[1] pr-2.5 material-symbols-outlined" style="color: #e80368;">account_circle</i>
+          <h3 class="font-bold m-0 p-0 text-base leading-[1]"><a class="hover:text-[#14279b]" href="#">Branding</a></h3>
+        </div>
+
+        <div class="flex items-center p-5 transition-all duration-300 bg-[#f6f6f6] hover:bg-[#eef7fc] ">
+          <i class="text-[32px] leading-[1] pr-2.5 material-symbols-outlined" style="color: #e361ff;">play_circle</i>
+          <h3 class="font-bold m-0 p-0 text-base leading-[1]"><a class="hover:text-[#14279b]" href="#">Media buying</a></h3>
+        </div>
+
+        <div class="flex items-center p-5 transition-all duration-300 bg-[#f6f6f6] hover:bg-[#eef7fc] ">
+          <i class="text-[32px] leading-[1] pr-2.5 material-symbols-outlined" style="color: #47aeff;">saved_search</i>
+          <h3 class="font-bold m-0 p-0 text-base leading-[1]"><a class="hover:text-[#14279b]" href="#">Search engine</a></h3>
+        </div>
+
+        <div class="flex items-center p-5 transition-all duration-300 bg-[#f6f6f6] hover:bg-[#eef7fc] ">
+          <i class="text-[32px] leading-[1] pr-2.5 material-symbols-outlined" style="color: #ffa76e;">date_range</i>
+          <h3 class="font-bold m-0 p-0 text-base leading-[1]"><a class="hover:text-[#14279b]" href="#">Brand strategy</a></h3>
+        </div>
+
+        <div class="flex items-center p-5 transition-all duration-300 bg-[#f6f6f6] hover:bg-[#eef7fc] ">
+          <i class="text-[32px] leading-[1] pr-2.5 material-symbols-outlined" style="color: #dbce11;">location_on</i>
+          <h3 class="font-bold m-0 p-0 text-base leading-[1]"><a class="hover:text-[#14279b]" href="#">Local search marketing</a></h3>
+        </div>
+
+        <div class="flex items-center p-5 transition-all duration-300 bg-[#f6f6f6] hover:bg-[#eef7fc] ">
+          <i class="text-[32px] leading-[1] pr-2.5 material-symbols-outlined" style="color: #4233ff;">bar_chart_4_bars</i>
+          <h3 class="font-bold m-0 p-0 text-base leading-[1]"><a class="hover:text-[#14279b]" href="#">Lead Tracking &amp; Management </a></h3>
+        </div>
+
+        <div class="flex items-center p-5 transition-all duration-300 bg-[#f6f6f6] hover:bg-[#eef7fc] ">
+          <i class="text-[32px] leading-[1] pr-2.5 material-symbols-outlined" style="color: #b2904f;">contacts</i>
+          <h3 class="font-bold m-0 p-0 text-base leading-[1]"><a class="hover:text-[#14279b]" href="#">Contact management</a></h3>
+        </div>
+
+        <div class="flex items-center p-5 transition-all duration-300 bg-[#f6f6f6] hover:bg-[#eef7fc] ">
+          <i class="text-[32px] leading-[1] pr-2.5 material-symbols-outlined" style="color: #b20969;">disc_full</i>
+          <h3 class="font-bold m-0 p-0 text-base leading-[1]"><a class="hover:text-[#14279b]" href="#">Media management</a></h3>
+        </div>
+
+        <div class="flex items-center p-5 transition-all duration-300 bg-[#f6f6f6] hover:bg-[#eef7fc] ">
+          <i class="text-[32px] leading-[1] pr-2.5 material-symbols-outlined" style="color: #ff5828;">event_note</i>
+          <h3 class="font-bold m-0 p-0 text-base leading-[1]"><a class="hover:text-[#14279b]" href="#">Social scheduling</a></h3>
+        </div>
+
+        <div class="flex items-center p-5 transition-all duration-300 bg-[#f6f6f6] hover:bg-[#eef7fc] ">
+          <i class="text-[32px] leading-[1] pr-2.5 material-symbols-outlined" style="color: #29cc61;">ad</i>
+          <h3 class="font-bold m-0 p-0 text-base leading-[1]"><a class="hover:text-[#14279b]" href="#">Ad retargeting</a></h3>
+        </div>
+    </AnimationCard>
+
+  </div>
+</section>
 
 <!-- 
 <section id="features" class="features">
@@ -665,7 +749,73 @@ let hasShow = false;
 <!-- ========== Our Core Features section End ========== -->
 
 <!-- ========== Contact Us section Start ========== -->
-<section class="contactUsSection contactUsSection"></section>
+<section class="contactUsSection contactUsSection">
+  <div class="containers">
+    <AnimationCard
+      className=" flex flex-col justify-center items-center pb-[30px] "
+      animationName="slide-up"
+    >
+      <h2 class="section-title mb-2">Contact Us</h2>
+    </AnimationCard>
+    <div class="flex flex-wrap">
+      <AnimationCard
+        className="w-1/3 max-tabletPot:w-1/2 max-mobileLand:w-full"
+        animationName="slide-up"
+        delay="100ms"
+      >
+        <h3 class="text-[28px] mb-2.5 p-0 leading-[1] font-bold tracking-tighter-[1] text-[#14279b] ">Akeshya</h3>
+        <p class="text-sm leading-6 primary-font-family text-[#888]">Designers, developers  &amp;  marketeers capable of delivering solutions according to your needs,</p>
+      </AnimationCard>
+      <AnimationCard
+        className="w-1/4 max-tabletPot:w-1/2 max-mobileLand:w-full"
+        animationName="slide-up"
+        delay="200ms"
+      >
+        <div>
+          <i class="ri-map-pin-line"></i>
+          <p>26-2-789, 7th street, Jyothi Nagar, Nellore, Andhra Pradesh 524004</p>
+        </div>
+
+        <div>
+          <i class="ri-mail-send-line"></i>
+          <p>info@akeshya.com</p>
+        </div>
+
+        <div>
+          <i class="ri-phone-line"></i>
+          <p>+91 94942 40922 </p>
+        </div>
+      </AnimationCard>
+      <AnimationCard
+        className="max-tabletPot:w-full"
+        animationName="slide-up"
+        delay="300ms"
+      >
+        <form class="php-email-form" method="POST" name="contact"><input type="hidden" name="form-name" value="contact">
+          <div class="form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" required=""></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>
+      </AnimationCard>
+    </div>
+  </div>
+  
+</section>
 
 <!-- 
 <section id="contact" class="contact">
@@ -741,148 +891,6 @@ let hasShow = false;
 <HomeFooter />
 <!-- ========== Footer section End ========== -->
 
-<style>
-  #heroSection {
-    width: 100%;
-    height: 70vh;
-    /* margin-top: 70px; */
-  }
-  .heroSectionH1 {
-    margin: 0;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 56px;
-    color: #14279b;
-  }
-  .heroSectionH2 {
-    color: #484848;
-    margin: 0;
-    margin-bottom: 40px;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 1.2;
-  }
-
-  .clientSection {
-    background: #f3f9fd;
-    padding: 10px 0;
-    text-align: center;
-  }
-
-  .section-title {
-    font-size: 32px;
-    font-weight: bold;
-    text-transform: uppercase;
-    position: relative;
-    color: #222222;
-  }
-
-  .section-title::before,
-  .section-title::after {
-    content: "";
-    width: 50px;
-    height: 2px;
-    background: #14279b;
-    display: inline-block;
-  }
-
-  .section-title::before {
-    margin: 0 15px 10px 0;
-  }
-
-  .section-title::after {
-    margin: 0 0 10px 15px;
-  }
-
-  .service-box {
-    padding: 30px;
-    position: relative;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
-    transition: all 0.3s ease-in-out;
-    border-radius: 8px;
-    z-index: 1;
-  }
-
-  .service-box::before {
-    content: "";
-    position: absolute;
-    background: #e1f0fa;
-    right: -60px;
-    top: -40px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    transition: all 0.3s;
-    z-index: -1;
-  }
-
-  .service-box:hover::before {
-    background: #14279b;
-    right: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 0px;
-  }
-
-  .service-box .icon {
-    margin: 0 auto 20px auto;
-    padding-top: 10px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    background: #14279b;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .service-box:hover .icon {
-    background: #fff;
-  }
-  .service-box:hover .icon i {
-    color: #14279b;
-  }
-  .service-box .icon i {
-    font-size: 36px;
-    line-height: 1;
-    color: #fff;
-  }
-  .service-box .title {
-    font-weight: 700;
-    margin-bottom: 15px;
-    font-size: 18px;
-  }
-  .service-box .description {
-    font-size: 15px;
-    line-height: 28px;
-    margin-bottom: 0;
-  }
-  .service-box:hover .title,
-  .service-box:hover .description {
-    color: #fff;
-  }
+<!-- <style>
   
-
-  @media (max-width: 992px) {
-    #heroSection {
-      flex-direction: column-reverse;
-    }
-    .heroSectionImg {
-      width: 50%;
-    }
-  }
-  @media (max-width: 768px) {
-    .heroSectionH1 {
-      font-size: 28px;
-      line-height: 36px;
-    }
-    .heroSectionH2 {
-      font-size: 18px;
-      line-height: 24px;
-      margin-bottom: 30px;
-    }
-  }
-</style>
+</style> -->
