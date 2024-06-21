@@ -9,5 +9,5 @@ export default defineConfig({
   output: "server",
   adapter: netlify(),
   site: 'https://abhay420coder.github.io/aksheya-task/',
-  base: 'my-repo',
+  base: 'aksheya-task',
 });
