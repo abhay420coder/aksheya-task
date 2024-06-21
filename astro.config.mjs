@@ -7,5 +7,7 @@ import netlify from "@astrojs/netlify";
 export default defineConfig({
   integrations: [tailwind()],
   output: "server",
-  adapter: netlify()
+  adapter: netlify(),
+  site: 'https://abhay420coder.github.io',
+  base: 'my-repo',
 });
