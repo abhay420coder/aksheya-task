@@ -628,52 +628,5 @@ let hasShow = false;
 
 
 <script>
-  document.getElementById('contactForm').addEventListener('submit', function(event) {
-  event.preventDefault();
-
-  const loading = document.querySelector('.loading');
-  const errorMessage = document.querySelector('.error-message');
-  const sentMessage = document.querySelector('.sent-message');
-
-  loading.style.display = 'block';
-  errorMessage.style.display = 'none';
-  sentMessage.style.display = 'none';
-
-  const formData = new FormData(this);
-
-  fetch('https://api.emailjs.com/api/v1.0/email/send', {
-    method: 'POST',
-    body: JSON.stringify({
-      service_id: 'service_fmrzp2q',
-      template_id: 'template_5jzvrt1',
-      user_id: 'cOJz9id0HKe_Jca4y',
-      template_params: {
-        'name': formData.get('name'),
-        'email': formData.get('email'),
-        'subject': formData.get('subject'),
-        'message': formData.get('message')
-      }
-    }),
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  })
-  .then(response => response.json())
-  .then(data => {
-    loading!.style.display = 'none';
-    if (data.status === 'OK') {
-      sentMessage!.style.display = 'block';
-      document.getElementById('contactForm').reset();
-    } else {
-      errorMessage.style.display = 'block';
-      errorMessage.textContent = 'Error sending message. Please try again later.';
-    }
-  })
-  .catch(error => {
-    loading.style.display = 'none';
-    errorMessage.style.display = 'block';
-    errorMessage.textContent = 'Error sending message. Please try again later.';
-  });
-});
 
 </script>  
