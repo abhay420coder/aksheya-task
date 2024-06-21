@@ -1,8 +1,8 @@
 ---
-const { animationName = "", className = "" ,delay="0ms" } = Astro.props;
+const { transitionName = "", className = "" ,transitionDelay="0ms" ,animationName="noAnimation" ,animationDuration="" , animationIterationCount="" , animationDelay="" } = Astro.props;
 ---
 
-<div class={animationName + " animation-block " + className} style={"transition-delay: "+ delay+" ;"}>
+<div class={transitionName + " transitiona-block " + className} style={"transition-delay: "+ transitionDelay+" ;" + "animation-name: "+ animationName+" ;" + "animation-duration: "+ animationDuration+" ;" + "animation-iteration-count: "+ animationIterationCount+" ;" + "animation-delay: "+ animationDelay+" ;"}>
     <slot />
 </div>
 
@@ -19,7 +19,7 @@ The .show class removes the transformations and sets opacity to 1, triggering th
 The .child elements follow the same pattern.
 */
 
-.animation-block {
+.transitiona-block {
     height: 100%;
     width: 100%;
     /* margin: 20px 0; */
@@ -28,40 +28,66 @@ The .child elements follow the same pattern.
     transition-delay: 100ms;
 
 }
-.animation-block.show { opacity: 1; }
+.transitiona-block.show { opacity: 1; }
 
-.animation-block.slide-up { transform: translateY(50px); }
-.animation-block.slide-up.show { transform: translateY(0); }
+.transitiona-block.slide-up { transform: translateY(50px); }
+.transitiona-block.slide-up.show { transform: translateY(0); }
 
-.animation-block.slide-down { transform: translateY(-50px); }
-.animation-block.slide-down.show { transform: translateY(0); }
+.transitiona-block.slide-down { transform: translateY(-50px); }
+.transitiona-block.slide-down.show { transform: translateY(0); }
 
-.animation-block.slide-left { transform: translateX(50px); }
-.animation-block.slide-left.show { transform: translateX(0); }
+.transitiona-block.slide-left { transform: translateX(50px); }
+.transitiona-block.slide-left.show { transform: translateX(0); }
 
-.animation-block.slide-right { transform: translateX(-50px); }
-.animation-block.slide-right.show { transform: translateX(0); }
+.transitiona-block.slide-right { transform: translateX(-50px); }
+.transitiona-block.slide-right.show { transform: translateX(0); }
 
-.animation-block.zoom-in { transform: scale(0.5); }
-.animation-block.zoom-in.show { transform: scale(1); }
+.transitiona-block.zoom-in { transform: scale(0.5); }
+.transitiona-block.zoom-in.show { transform: scale(1); }
 
-.animation-block.zoom-out { transform: scale(1.5); }
-.animation-block.zoom-out.show { transform: scale(1); }
+.transitiona-block.zoom-out { transform: scale(1.5); }
+.transitiona-block.zoom-out.show { transform: scale(1); }
 
-.animation-block > .child {
+.transitiona-block > .child {
     margin: 5px;
     /* width: 30px;
     height: 30px; */
     opacity: 0;
     transition: transform 1s, opacity 1s;
 }
-.animation-block > .child.show { opacity: 1; }
+.transitiona-block > .child.show { opacity: 1; }
+
+
+@keyframes shakeY {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateY(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes shakeX {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
 
 </style>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     const handleScroll = () => {
-        document.querySelectorAll('.animation-block').forEach(block => {
+        document.querySelectorAll('.transitiona-block').forEach(block => {
             const rect = block.getBoundingClientRect();
 
             // if block/div come on screen
