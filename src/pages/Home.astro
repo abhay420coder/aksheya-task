@@ -759,7 +759,7 @@ let hasShow = false;
     </AnimationCard>
     <div class="flex flex-wrap">
       <AnimationCard
-        className="w-1/3 max-tabletPot:w-1/2 max-mobileLand:w-full"
+        className="!w-1/3 max-tabletPot:!w-1/2 max-mobileLand:!w-full px-3"
         animationName="slide-up"
         delay="100ms"
       >
@@ -767,31 +767,31 @@ let hasShow = false;
         <p class="text-sm leading-6 primary-font-family text-[#888]">Designers, developers  &amp;  marketeers capable of delivering solutions according to your needs,</p>
       </AnimationCard>
       <AnimationCard
-        className="w-1/4 max-tabletPot:w-1/2 max-mobileLand:w-full"
+        className="!w-1/4 max-tabletPot:!w-1/2 max-mobileLand:!w-full px-3"
         animationName="slide-up"
         delay="200ms"
       >
-        <div>
-          <i class="ri-map-pin-line"></i>
-          <p>26-2-789, 7th street, Jyothi Nagar, Nellore, Andhra Pradesh 524004</p>
+        <div class="flex items-start ju">
+          <i class="material-symbols-outlined text-[32px] text-[#14279b] ">location_on</i>
+          <p class="pl-2.5 pb-2.5  text-sm leading-7">26-2-789, 7th street, Jyothi Nagar, Nellore, Andhra Pradesh 524004</p>
         </div>
 
-        <div>
-          <i class="ri-mail-send-line"></i>
-          <p>info@akeshya.com</p>
+        <div class="flex items-center">
+          <i class="material-symbols-outlined text-[32px] text-[#14279b] ">outgoing_mail</i>
+          <p class="pl-2.5 pb-2.5 text-sm leading-7 ">info@akeshya.com</p>
         </div>
 
-        <div>
-          <i class="ri-phone-line"></i>
-          <p>+91 94942 40922 </p>
+        <div class="flex items-center">
+          <i class="material-symbols-outlined text-[32px] text-[#14279b] ">call</i>
+          <p class="pl-2.5 pb-2.5  text-sm leading-7">+91 94942 40922 </p>
         </div>
       </AnimationCard>
       <AnimationCard
-        className="max-tabletPot:w-full"
+        className="!w-5/12 max-tabletPot:!w-full px-3"
         animationName="slide-up"
         delay="300ms"
       >
-        <form class="php-email-form" method="POST" name="contact"><input type="hidden" name="form-name" value="contact">
+        <form id="contactForm" class="contact-form" method="POST" name="contact"><input type="hidden" name="form-name" value="contact">
           <div class="form-group">
             <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
           </div>
@@ -809,7 +809,7 @@ let hasShow = false;
             <div class="error-message"></div>
             <div class="sent-message">Your message has been sent. Thank you!</div>
           </div>
-          <div class="text-center"><button type="submit">Send Message</button></div>
+          <div class="text-center"><button class="primary-button" type="submit">Send Message</button></div>
         </form>
       </AnimationCard>
     </div>
@@ -886,11 +886,65 @@ let hasShow = false;
 
 <!-- ========== Contact Us section End ========== -->
 
-<AnimationExample />
+<!-- <AnimationExample /> -->
 <!-- ========== Footer section Start ========== -->
 <HomeFooter />
 <!-- ========== Footer section End ========== -->
 
-<!-- <style>
-  
-</style> -->
+<style>
+  .contact-form .loading, .contact-form .error-message, .contact-form .sent-message {
+    display: none;
+    margin-top: 10px;
+  }
+</style>
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const loading = document.querySelector('.loading');
+  const errorMessage = document.querySelector('.error-message');
+  const sentMessage = document.querySelector('.sent-message');
+
+  loading.style.display = 'block';
+  errorMessage.style.display = 'none';
+  sentMessage.style.display = 'none';
+
+  const formData = new FormData(this);
+
+  fetch('https://api.emailjs.com/api/v1.0/email/send', {
+    method: 'POST',
+    body: JSON.stringify({
+      service_id: 'service_fmrzp2q',
+      template_id: 'template_5jzvrt1',
+      user_id: 'cOJz9id0HKe_Jca4y',
+      template_params: {
+        'name': formData.get('name'),
+        'email': formData.get('email'),
+        'subject': formData.get('subject'),
+        'message': formData.get('message')
+      }
+    }),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+  .then(response => response.json())
+  .then(data => {
+    loading!.style.display = 'none';
+    if (data.status === 'OK') {
+      sentMessage!.style.display = 'block';
+      document.getElementById('contactForm').reset();
+    } else {
+      errorMessage.style.display = 'block';
+      errorMessage.textContent = 'Error sending message. Please try again later.';
+    }
+  })
+  .catch(error => {
+    loading.style.display = 'none';
+    errorMessage.style.display = 'block';
+    errorMessage.textContent = 'Error sending message. Please try again later.';
+  });
+});
+
+</script>  

@@ -272,3 +272,19 @@ section {
     margin-bottom: 30px;
   }
 }
+
+.form-group {
+  @apply mb-5;
+  /* margin-bottom: 20px; */
+}
+
+.form-control {
+  @apply block w-full font-normal 
+  text-[#212529] bg-[#fff] 
+  bg-clip-padding border border-solid border-[#ced4da] shadow-none text-sm py-2.5 px-[15px] appearance-none ;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  /* border-radius: 0; */
+    /* box-shadow: none; */
+    /* font-size: 14px; */
+    /* padding: 10px 15px; */
+}
