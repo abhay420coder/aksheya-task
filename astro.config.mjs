@@ -8,6 +8,6 @@ export default defineConfig({
   integrations: [tailwind()],
   output: "server",
   adapter: netlify(),
-  site: 'https://abhay420coder.github.io',
+  site: 'https://abhay420coder.github.io/aksheya-task/',
   base: 'my-repo',
 });
